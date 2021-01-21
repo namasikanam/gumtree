@@ -26,6 +26,11 @@ import java.util.List;
 import java.util.Map.Entry;
 
 public class Tree extends AbstractTree implements ITree {
+    public static final int DIR_TYPE = -9;
+    public static final String DIR_TYPE_NAME = "dir";
+
+    public static final int FILE_TYPE = -8;
+    public static final String FILE_TYPE_NAME = "file";
 
     private int type;
 

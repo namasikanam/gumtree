@@ -191,6 +191,12 @@ public class TreeContext {
         newContext.serializers.addAll(serializers);
         return newContext;
     }
+    
+    public void merge(TreeContext ctx) {
+        typeLabels.putAll(ctx.typeLabels);
+        metadata.putAll(ctx.metadata);
+        serializers.addAll(ctx.serializers);
+    }
 
     /**
      * Get an iterator on local and global metadata.
